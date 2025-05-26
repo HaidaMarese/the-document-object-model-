@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A personal blog to share thoughts, stories, and ideas. Create new posts and explore my posts.">
+  <title>Personal Blog Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>HM-Personal Blog</h1>
+      <p>Your trusted space to share insights and grow your ideas</p>
+    </header>
+    
+    <section class="form-section">
+      <h2>Create New Post</h2>
+      <form id="post-form">
+        <div class="form-group">
+          <label for="post-title">Post Title:</label>
+          <input type="text" id="post-title" placeholder="Please enter the title......" />
+          <span class="error-message" id="title-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="post-content">Post Content:</label>
+          <textarea id="post-content" rows="5" placeholder="Write your thoughts here..."></textarea>
+          <span class="error-message" id="content-error"></span>
+        </div>
+        <button type="submit" id="submit-btn">Add Post</button>
+        <button type="button" id="cancel-edit" style="display:none;">Cancel Edit</button>
+      </form>
+    </section>
+    
+    <section class="posts-section">
+      <h2>My Posts</h2>
+      <div id="posts-container"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
